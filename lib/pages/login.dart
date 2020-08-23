@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class LogIn extends StatelessWidget {
 
-  TextEditingController uNameCntrlr = TextEditingController();
+  TextEditingController uEmailCntrlr = TextEditingController();
   TextEditingController uPwdCntrlr = TextEditingController();
 
   @override
@@ -21,7 +21,7 @@ class LogIn extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               TextField(
-                controller: uNameCntrlr,
+                controller: uEmailCntrlr,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
