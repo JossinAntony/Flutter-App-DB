@@ -1,5 +1,6 @@
 
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Register extends StatelessWidget {
@@ -23,7 +24,7 @@ class Register extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(28.0),
             alignment: Alignment.center,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -132,11 +133,16 @@ class Register extends StatelessWidget {
 
                 SizedBox(height: 50.0),
 
-                RaisedButton(
-                  onPressed: (){},
-                  color: Colors.blue,
-                  child: Center(
-                      child: Text('Log In')
+                ButtonTheme(
+                  minWidth: 300,
+                  height: 50,
+                  child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    onPressed: (){},
+                    color: Colors.blue,
+                    child: Text('Register'),
                   ),
                 ),
               ],

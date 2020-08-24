@@ -1,5 +1,4 @@
-
-
+import 'package:app_flutter_db/pages/register.dart';
 import 'package:flutter/material.dart';
 
 class LogIn extends StatelessWidget {
@@ -50,6 +49,29 @@ class LogIn extends StatelessWidget {
                 onPressed: (){},
                 color: Colors.blue,
                 child: Center(child: Text('Log In')),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+              ),
+
+              SizedBox(height: 15.0),
+
+              GestureDetector(
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => Register())),
+                child: Container(
+                  height: 35,
+                  width: 600,
+
+                  decoration: BoxDecoration(
+                    color: Colors.amber,
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+
+                  child: Center(
+                      child: Text('Register',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold))),
+                ),
               ),
             ],
           )
